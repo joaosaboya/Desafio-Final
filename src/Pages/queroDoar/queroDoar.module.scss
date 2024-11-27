@@ -1,0 +1,32 @@
+
+.principal{
+    border: solid 2px rebeccapurple;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: solid 2px yellow;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    form{
+        border: solid 2px #005695;
+        width: 30vw;
+        height: 60vh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        div{
+            border: solid 2px green;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            color: #005695;
+        }
+    }
+}

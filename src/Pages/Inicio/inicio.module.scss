@@ -1,7 +1,58 @@
 
+
+
 .post{
     background-image: url('../../assets/banner.png');
-    height: 88vh;
+    height: 85.5vh;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    h2{
+        color: white;
+        // border: solid 2px red;
+        width: 32vw;
+        font-size: 40px;
+        margin-left: 70px;
+    }
+}
+
+.devoDoar{
+    // border: solid 4px blueviolet;
+    height: 80vh;
+    div{
+        // border: solid 2px red;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            color: #005695;
+            margin-left: 50px;
+        }
+    }
+}
+
+.boxCard{
+    // border: solid 2px green;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-evenly;
+    article{
+        // border: solid 2px blue;
+        width: 20%;
+        height: 80%;
+        background-color: #0157944D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        p{
+            text-align: center;
+        }
+
+    }
 }

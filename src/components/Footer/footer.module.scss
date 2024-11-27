@@ -1,0 +1,31 @@
+
+footer{
+    border: solid 2px red;
+    height: 30vh;
+}
+.boxSocial{
+    background-color: #005695;
+    color: white;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    nav{
+        border: solid 2px green;
+        width: 16vw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+}
+.boxAlerta{
+    color: white;
+    background-color: #232020;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
