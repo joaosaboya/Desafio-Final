@@ -17,7 +17,7 @@ export default function Inicio(){
                 </div>
                 <section className={S.boxCard}>
                     <article>
-                        <img src={grupo} alt="" />
+                        <img src={comunidade} alt="" />
                         <p> Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>
                     </article>
                     <article>
