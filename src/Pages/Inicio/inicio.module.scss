@@ -1,28 +1,22 @@
-
-
-
 .post{
     background-image: url('../../assets/banner.png');
     height: 85.5vh;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     h2{
         color: white;
-        // border: solid 2px red;
         width: 32vw;
         font-size: 40px;
-        margin-left: 70px;
+        margin-left: 150px;
     }
 }
 
 .devoDoar{
-    // border: solid 4px blueviolet;
     height: 80vh;
     div{
-        // border: solid 2px red;
         height: 15vh;
         display: flex;
         align-items: center;
@@ -35,13 +29,11 @@
 }
 
 .boxCard{
-    // border: solid 2px green;
     display: flex;
     height: 60vh;
     align-items: center;
     justify-content: space-evenly;
     article{
-        // border: solid 2px blue;
         width: 20%;
         height: 80%;
         background-color: #0157944D;
@@ -54,5 +46,44 @@
             text-align: center;
         }
 
+    }
+}
+@media(max-width: 1000px){
+    .boxCard{
+        article{
+        font-size: 1.5vw;
+    }
+}    
+}
+@media(max-width: 780px){
+    .devoDoar{
+        border: solid 2px green;
+        height: 120vh;
+        div{
+            border: solid 2 px black;
+            justify-content: center;
+        }
+        h2{
+            margin-left: 0;
+        }
+    }
+
+    .boxCard{
+        border: solid 2px yellow;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        article{
+            width: 250px;
+            height: 40vh;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media(max-width: 528px){
+    .devoDoar{
+        height: 190vh;
     }
 }

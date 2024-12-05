@@ -3,68 +3,111 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
   }
   
   .logoHeader {
-    border: solid yellow;
     display: flex;
-    width: 30vw;
+    width: 23vw;
     justify-content: space-around;
     align-items: center;
-  
-    img {
-      width: 20%;
+    img{
+      width: 5vw;
     }
-  
-    h1 {
-      font-size: 40px;
+    h1{
       color: #fff;
+      font-size: 20px;
     }
   }
   
   .navHeader {
-    width: 30%;
+    width: 35vw;
   
     ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: center;
       list-style: none;
-    }
-  
-    .link {
-      color: #fff;
-      font-size: 20px;
-      text-decoration: none;
+      font-size: 17px;
+      a{
+        color: #fff;
+      }
     }
   }
   
   .barraDeBusca {
-    border: solid #fff;
-    border-radius: 20px;
-    margin-right: 1%;
-    width: 20%;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 17vw;
     height: 6vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
   
     input {
+      outline: none;
+      color: white;
       background-color: transparent;
       border: none;
-      width: 60%;
       height: 5vh;
-  
+      padding-left: 6px;
+      font-size: 11px;
+      width: 12vw;
       &::placeholder {
         color: #fff;
-        font-size: 20px;
       }
     }
-  
-    button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+  }
+
+@media(max-width: 1168px){
+  .logoHeader{
+    width: 25vw;
+    img{
+      width: 5vw;
+    }
+    h1{
+      font-size: 2vw;
+    }
+  }
+  .barraDeBusca{
+    input{
+      &::placeholder{
+        font-size: 1vw;
+      }
+    }
+  }
+  .navHeader{
+    ul{
+      font-size: 1.6vw;
+
     }
   }
   
+}
+@media(max-width: 780px){
+  .header{
+    flex-direction: column;
+    height: 25vh;
+    justify-content: space-evenly;
+  }
+  .barraDeBusca{
+    display: none;
+  }
+  .logoHeader{
+    width: 80%;
+    h1{
+      font-size: 30px;
+    }
+    img{
+      width: 70px;
+    }
+  }
+  .navHeader{
+    width: 100%;
+    ul{
+      justify-content: space-evenly;
+      font-size: 21px;
+    }
+  }
+}
